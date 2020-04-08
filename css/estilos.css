@@ -1,0 +1,101 @@
+@import url(otrosEstilos.css);
+h2 {color: darkcyan;}
+p {color: crimson; font-family: arial;}
+
+/* Selector Universal */
+
+* {font-family: arial; }
+
+/* Selector tipo o etiqueta */
+
+span {color: darkgreen;}
+
+/* Selector class */
+
+span.subrayado {text-decoration: underline;}
+
+/* Selector ID similar a class pero con id*/
+
+h3#mayusculas {text-transform: uppercase;}
+
+/* Selectores pseudo-class */
+
+a:link {color: aquamarine;} /* link no visitado */
+a:visited {color: coral;} /* link que ya se ha visitado */
+a:hover {font-weight: bold; text-decoration: none;}/* cursor sobre el link */
+a:active {color: blueviolet;} /* link presionado o al dar click */
+
+/* Selector de atributo */
+
+img[title]{width: 400px; height: auto;} /* Todos los elemntos con el atributo especifico */
+
+img[alt="Filo"]{width: 600px; height: auto;} /* Todos los elemntos con un atributo y valor especifico */
+
+/* fuente */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 1.5; */
+    /* shorthand o metodo abreviado
+    /* font: italic small-caps bold 25px/50px arial, helvetica, sans-serif; */
+}
+
+/* texto */
+p {
+  text-align: justify; /* left, center, right justify */
+  text-indent: 20px; /* numero o pixeles*/
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h2 {
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+
+/* Fondos */
+
+body {
+  /* background-color: peachpuff; */
+  /* background-image: url(../img/tree_zoom_Supertextae.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
+/* Cuadro */
+
+#cuadro {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  background: lime;
+
+  /* border-width: 6px;
+  border-style: solid;
+  border-color: aqua; */
+  border: 4px dashed aqua;
+
+  /* padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 5px; */
+  padding: 20px 50px 10px 5px;
+
+  margin-top: 40px;
+  margin-right: 0px;
+  margin-bottom: 70px;
+  margin-left: 20px;
+}
